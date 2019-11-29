@@ -56,7 +56,7 @@ public class PatientIOInfoList : System.Web.IHttpHandler
             conn.Open();
             SqlCommand command = new SqlCommand(queryString, conn);
             context.Response.Write("AAA" + conn);
-            //command.ExecuteNonQuery();
+            command.ExecuteNonQuery();
             conn.Close();
         }
         // System.Collections.Generic.List<Patient> p_info_list = new System.Collections.Generic.List<Patient>();
